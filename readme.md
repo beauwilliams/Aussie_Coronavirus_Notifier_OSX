@@ -20,3 +20,5 @@ Run the `./stop.sh` script
 
 #### Currently supports Australia only
 
+#### NOTE: This repo ships with a patched version of plyer. It sheds a dependency and fixes a bug relating to recent versions of osx to allow us to send notifications using some applescript I wrote as a replacement for the python module that was used previously. This should run on all OSX machines alike no need to worry about your python version!
+
