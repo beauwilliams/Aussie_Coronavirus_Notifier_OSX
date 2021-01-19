@@ -1,4 +1,4 @@
-#Coronavirus stats notifier for MAC OSX
+# Coronavirus stats notifier for MAC OSX
 
 This is a little project to demonstrate the use of an API and some python / shell scripts
 
