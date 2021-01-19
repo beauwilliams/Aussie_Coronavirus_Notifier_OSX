@@ -9,11 +9,13 @@ from plyer import notification
 
 # let there is no data initially
 covidData = None
+country = input("Country you are located in: ").lower()
+
 try:
-    covidData = requests.get("https://corona-rest-api.herokuapp.com/Api/australia")
+    covidData = requests.get("https://corona-rest-api.herokuapp.com/Api/%s" % (country))
 except:
-    #if the data is not fetched due to lack of internet
-    print("Please! Check your internet connection")
+    #if the data is not fetched due to lack of internet or country mistyped
+    print("Error: Please check your internet connection and that you have correctly typed in your country")
 
 #if we fetched data
 if (covidData != None):
